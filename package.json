@@ -1,0 +1,16 @@
+{
+  "name": "ajs-template",
+  "version": "0.0.1",
+  "description": "Angular JS Template, by David Huertas",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dhuertas",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/dorchsoftteam/ajs-template.git"
+  },
+  "homepage": "https://bitbucket.org/dorchsoftteam/ajs-template#readme"
+}

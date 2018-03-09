@@ -1,0 +1,18 @@
+{
+  "name": "ajs-template",
+  "description": "Angular JS Template, by David Huertas",
+  "main": "gulpfile.js",
+  "authors": [
+    "dhuertas"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "app/node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
