@@ -12,5 +12,14 @@
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/dorchsoftteam/ajs-template.git"
   },
-  "homepage": "https://bitbucket.org/dorchsoftteam/ajs-template#readme"
+  "homepage": "https://bitbucket.org/dorchsoftteam/ajs-template#readme",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-connect": "^5.5.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^3.0.0"
+  }
 }
