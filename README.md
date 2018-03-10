@@ -2,7 +2,7 @@
 
 ## Introduction
 This **Angular JS Template** is a good start point for a new AngularJS project with **Gulp** as the task manager and **Bower** as the front-end dependencies manager.
-Most information of this guide is taken from Michael Herman's website, http://mherman.org/blog/2014/08/14/kickstarting-angular-with-gulp.
+Most information of this guide is taken from Michael Herman's website, http://mherman.org/blog/2014/08/14/kickstarting-angular-with-gulp. Although, there where a few mistakes that I have corrected in this version, like the content of the _.bowerrc_ file or the _NPM Local Dependencies_ that were missing.
 
 ## Content
 
@@ -60,7 +60,7 @@ You can specify where you want the dependencies (commonly known as bower compone
 _NPM_
 
 ```
-$ npm install gulp bower gulp-clean gulp-jshint gulp-uglify gulp-minify-css gulp-connect --save
+$ npm install gulp bower jshint run-sequence gulp-clean gulp-jshint gulp-uglify gulp-minify-css gulp-connect --save
 ```
 
 _Bower_
