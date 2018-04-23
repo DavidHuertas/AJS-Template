@@ -6,6 +6,7 @@ var connect = require('gulp-connect');
 var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
+var jade = require('gulp-jade');
 var clean = require('gulp-clean');
 var runSequence = require('run-sequence');
 
@@ -20,6 +21,13 @@ gulp.task('clean', function() {
     //gulp.src('./dist/*') // The difference is that this line does not delete the folder, just the content
     gulp.src('./dist/')
       .pipe(clean({force: true}));
+});
+gulp.task('jade', function() {
+	return gulp.src(['./app/*.jade', './app/**/*.jade'])
+	.pipe(jade({
+		pretty: true
+	})) // pip to jade plugin
+	.pipe(gulp.dest('./dist/')); // tell gulp our output folder
 });
 gulp.task('minify-css', function() {
   var opts = {comments:true,spare:true};
@@ -64,6 +72,6 @@ gulp.task('default',
 gulp.task('build', function() {
   runSequence(
     ['clean'],
-    ['lint', 'minify-css', 'minify-js', 'copy-html-files', 'copy-bower-components', 'connectDist']
+    ['lint', 'jade', 'minify-css', 'minify-js', 'copy-bower-components', 'connectDist']
   );
 });
