@@ -1,4 +1,4 @@
-# AngularJS Template, by David Huertas
+# AngularJS Template, by David Huertas 
 
 ## Introduction
 This **Angular JS Template** is a good start point for a new AngularJS project with **Gulp** as the task manager and **Bower** as the front-end dependencies manager.
